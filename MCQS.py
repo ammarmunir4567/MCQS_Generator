@@ -24,9 +24,7 @@ def generate():
     # Invoke the chain with the job data
     response = chain.invoke({"job": job})
     
-    # Logging response for debugging
-    # print("Response Content:", response.content)
-    
+
     # Store the generated MCQs and answers
     mcqs_with_answers = response.content.split("\n\n")  # Assuming each question-answer pair is separated by a double newline
     
