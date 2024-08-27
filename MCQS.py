@@ -11,7 +11,8 @@ def generate():
     prompt = ChatPromptTemplate.from_template(
         f"Generate 5000 random multiple-choice questions (MCQs) for a MCQS test related to {job}. "
         "Each question should have four options labeled A, B, C, and D, and provide the correct answer. "
-        f"Give me total of exact  15 mcqs ,no more than 15 MCQS else you will be punished"
+        f"Give me total of exact  15 mcqs out of those 5000 randomly,no more than 15 MCQS else you will be punished"
+        "The Question should be random and unqiue and must contain all type of difficulty"
         "Format each question and answer pair like 'Q: <question> Options: A. <option1>, B. <option2>, C. <option3>, D. <option4>. Answer: <correct option>'."
     )
     
